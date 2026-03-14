@@ -460,7 +460,7 @@ export default function App() {
                   <div className="lg:w-2/5 relative overflow-hidden border-b lg:border-b-0 lg:border-r border-[#222] bg-[#050505] min-h-[300px]">
                     <div className="absolute inset-0 bg-[#00FF41]/10 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
                     <img 
-                      src="https://images.unsplash.com/photo-1555949963-aa79dcee57d5?q=80&w=800&auto=format&fit=crop" 
+                      src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop" 
                       alt="Dynamic-SLAM" 
                       className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700 grayscale group-hover:grayscale-0"
                       referrerPolicy="no-referrer"
