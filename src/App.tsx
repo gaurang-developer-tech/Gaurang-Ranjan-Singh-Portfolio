@@ -227,7 +227,7 @@ export default function App() {
               className="relative h-full flex items-center justify-center md:justify-end"
             >
               <img 
-                src="https://github.com/gaurang-developer-tech.png" 
+                src="/profile.png" 
                 alt="Gaurang Ranjan Singh" 
                 className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-2 border-[#00FF41] shadow-[0_0_30px_rgba(0,255,65,0.2)]"
                 referrerPolicy="no-referrer"
