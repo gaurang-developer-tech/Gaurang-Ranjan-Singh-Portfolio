@@ -20,11 +20,11 @@ export default function App() {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
   
-  const springConfig = { damping: 28, stiffness: 500, mass: 0.5 };
+  const springConfig = { damping: 20, stiffness: 800, mass: 0.1 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
-  const dotSpringConfig = { damping: 40, stiffness: 1000, mass: 0.1 };
+  const dotSpringConfig = { damping: 15, stiffness: 1200, mass: 0.05 };
   const dotXSpring = useSpring(cursorX, dotSpringConfig);
   const dotYSpring = useSpring(cursorY, dotSpringConfig);
 
@@ -116,6 +116,7 @@ export default function App() {
           backgroundColor: isHovering ? 'rgba(0, 255, 65, 0.1)' : 'transparent',
           rotate: isHovering ? 45 : 0,
         }}
+        transition={{ type: "tween", duration: 0.15, ease: "easeOut" }}
       />
       <motion.div
         className="fixed top-0 left-0 w-1.5 h-1.5 bg-[#00FF41] pointer-events-none z-[100]"
@@ -223,12 +224,12 @@ export default function App() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="relative h-full flex items-end justify-center md:justify-end"
+              className="relative h-full flex items-center justify-center md:justify-end"
             >
               <img 
                 src="/profile.png" 
                 alt="Gaurang Ranjan Singh" 
-                className="max-h-[50vh] md:max-h-[70vh] object-contain object-bottom drop-shadow-2xl rounded-b-none rounded-t-full border-4 border-[#00FF41]/30"
+                className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-2 border-[#00FF41] shadow-[0_0_30px_rgba(0,255,65,0.2)]"
                 referrerPolicy="no-referrer"
               />
             </motion.div>
